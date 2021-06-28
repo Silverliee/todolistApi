@@ -1,0 +1,3 @@
+{
+  "DATABASE_ACCESS": "mongodb+srv://mohamed:414498200@silver-cluster.yegdt.mongodb.net/todolistDatabase?retryWrites=true&w=majority"
+}
