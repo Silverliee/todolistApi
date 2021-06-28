@@ -2,7 +2,8 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const config = require('config.json')
+const config = require('./config.json');
+const mongoose = require('mongoose');
 const userController = require('./Controller/UserController')
 
 //Mongoose initialisation

@@ -4,16 +4,25 @@
   "description": "ESGI Unit test project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nodemon": "nodemon server.js",
+    "test": "jest"
   },
   "author": "Traore Mohamed, Noé Marleix",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "jest": "^27.0.6",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.15",
     "mongoose-unique-validator": "^2.0.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
