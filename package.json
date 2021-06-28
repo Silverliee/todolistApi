@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "nodemon": "nodemon server.js",
-    "test": "jest"
+    "test": "jest --"
   },
   "author": "Traore Mohamed, Noé Marleix",
   "license": "ISC",
