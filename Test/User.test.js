@@ -75,3 +75,9 @@ describe('User test', () => {
 		expect(res.body.message).toEqual('âge invalide')
 	})
 })
+const mongoose = require('mongoose');
+afterAll(done => {
+	// Closing the DB connection allows Jest to exit successfully.
+	mongoose.connection.close()
+	done()
+})

@@ -44,3 +44,9 @@ describe('Item test', () => {
 		expect(res.body.message).toEqual('La description de l\'item ne doit pas dépasser 1000 caractères')
 	})
 })
+const mongoose = require('mongoose');
+afterAll(done => {
+	// Closing the DB connection allows Jest to exit successfully.
+	mongoose.connection.close()
+	done()
+})
