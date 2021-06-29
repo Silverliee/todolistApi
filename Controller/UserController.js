@@ -56,7 +56,7 @@ router.put('/:id', async(req, res) => {
 });
 //Delete Request here
 router.delete('/', async(req, res) => {
-	await UserModel.deleteOne({email: req.params.email})
+	await UserModel.deleteOne({email: req.body.email})
 		.then(() => res.status(200).json({message: "L'utilisateur a bien été supprimé"}))
 		.catch(error => res.status(400).json({error}));
 });
